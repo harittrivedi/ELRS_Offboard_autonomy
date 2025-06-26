@@ -28,3 +28,59 @@ We're currently building the core bridge that:
 ```bash
 pip install -e .
 elrs-bridge --port /dev/ttyUSB0
+```
+
+---
+
+## 🔭 Roadmap
+
+| Phase | Milestone | Status |
+|-------|-----------|--------|
+| 1     | ELRS Bridge (serial + MAVLink RC) | 🟢 In Progress |
+| 2     | Analog video capture + YOLOv8 detector | ⏳ Planned |
+| 3     | Object tracking (DeepSORT) + PID | ⏳ Planned |
+| 4     | Integration with TinyWhoop + CLI SDK | ⏳ Planned |
+| 5     | Docs, GitHub CI/CD, live demos | ⏳ Planned |
+
+---
+
+## 📦 Tech Stack
+
+- `pyserial` — for ELRS serial I/O  
+- `pymavlink` or `MAVSDK-Python` — for RC overrides  
+- `opencv-python` + `ultralytics` — for vision (future)  
+- `deep_sort_realtime` — for object tracking (future)  
+- `asyncio` — for modular, event-driven control loop
+
+---
+
+## 🤔 Why Ground-Only?
+
+- Keeps drones ultralight and power efficient  
+- Supports analog FPV systems with zero onboard compute  
+- Works with Tiny Whoops and budget drones  
+- Ideal for inspection, surveillance, and creative use cases
+
+---
+
+## 💡 Example Use Case
+
+Imagine a telecom technician climbing a tower with a Tiny Whoop that **automatically follows and livestreams**, spotting structural damage in real time—boosting safety, reducing inspection time by up to 40%, and creating new service revenue models.
+
+No GPS. No heavy compute. Just analog vision + Python smarts.
+
+---
+
+## 🙌 Contributions Welcome
+
+This project is in early development. Whether you're into FPV, embedded systems, AI vision, or clean Python code — you're invited!
+
+📅 **Monthly updates will be posted here and on LinkedIn.**
+
+📂 GitHub: [https://github.com/harittrivedi/ELRS_Offboard_autonomy]
+
+🔁 Re-share if you're into FPV, embedded vision, MAVLink, or just creative drone engineering.
+
+---
+
+#FPV #ELRS #TinyWhoop #Python #DroneTech #ComputerVision #OpenSource #MadeInIndia
